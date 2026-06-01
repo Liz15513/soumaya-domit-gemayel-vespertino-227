@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Soumaya Domit Gemayel Vespertino 227</title> 
+ <style>
+
+   body {  
+    font-family: Arial,sans-serif;
+    margin: 0;
+    background-color: aqua;
+   }
+     header  {
+            background-color: rgba(223, 247, 9, 0.932);
+            padding: 15px;
+            text-align: center;
+            }
+            nav {
+                background-color: blueviolet;
+                padding: 10px;
+                text-decoration: none;
+             }
+              nav a {
+                color: antiquewhite;
+                margin: 0 10px;
+                text-decoration: none;
+                }
+                 
+                    .container {
+                        padding: 20px;
+                        }
+            .card {
+                background: white;
+                padding: 15px;
+                margin: 10px 0;
+
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0,1);
+                }
+                .banner {
+                    width: 250px;
+                    height: auto;
+                    display: block;
+                    margin: auto;
+                }
+            footer {
+                background-color: aqua;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+        </style>
+
+        <header>
+                <img src="escudo22770v.jpeg"class="banner">
+                <h1>Soumaya Domit Gemayel Vespertino 227</h1>
+                <p>Educacion de calidad para el futuro</p>
+        </header>
+
+                <nav>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#historia">Historia</a>
+                    <a href="#oferta eduativa">Oferta educativa</a>
+                     <a href="#contacto">Contacto</a>
+                    </nav>
+
+                    <div class="container">
+
+                    <div class="card">
+                       <h2>Bienvenidos</h2>
+                       <p>Somos una institución comprometida con la formarcion académica y personal de nuestros alumnos.</p>
+                    </div>  
+
+                       <div class="card">
+                        <h2>Historia</h2>
+                        <p>Nuestra escuela fue fundada con el objetivo de brindar educación de calidad en la comunidad.</p>
+                        </div>
+
+                       <div class="card">
+                        <h2>Oferta educativa</h2>
+                        <ul>
+                        <li>Español</li>
+                        <li>Ingles</li>
+                        <li>Artes</li>
+                        <li>Matematicas</li>
+                        <li>Biologia</li>
+                        <li>Geografia 1er grado</li>
+                        <li>Historia</li>
+                        <li>Formacion Civica y Etica</li>
+                        <li>Talleres</li>
+                        <li>Educacion Fisica</li> 
+                        </ul>
+
+                        </div>
+
+                        <section class="container">
+                        
+                            <h2>Plantel</h2>
+
+                            <p> 
+                                Nuestro plantel cuenta con instalaciones adecuadas para el aprendizaje y el desarrollo de los alumnos.
+                            </p>
+
+                            <div class="slider2">
+                                <img id="plantel" src="instalacion11.jpeg">
+                         </div>
+                        </section>
+
+                        <section class="container">
+
+                            <h2>Actividades Escolares Y Culturales</h2>
+
+                            <p>
+                                Nuestra escuela organiza visitas a diferentes museos, dinamicas educativas como capsula del tiempo y platicas informativas sobre temas importantes como la prevencion de adicciones. 
+                            </p>
+
+                            <div class="slider3">
+                                <img id="actividades" src="navidad.jpeg">
+                            </div>
+
+                        </section>
+
+                    <style>
+                        #plantel{
+                            width: 500px;
+                            height: 300px;
+                            object-fit: cover;
+                            border-radius: 15px;
+                            display: block;
+                            margin: auto;
+                        }
+
+                        #actividades{
+                            width: 500px;
+                            height: 300px;
+                            object-fit: cover;
+                            border-radius: 15px;
+                            display: block;
+                            margin: auto;
+                        }
+                    </style>
+
+                    <script>
+
+                        window.onload = function(){
+
+                             const fotosPlantel = [
+
+                             "instalacion11.jpeg",
+                             "instalacion111.jpeg",
+                             "intalacion1.jpeg",
+                             "intalacionesjardin1.jpeg",
+                             "instalacion12.jpeg",
+                             "instalacion13.jpeg",
+                             "intalacionesred1.jpeg",
+                             "salon1.jpeg",
+                             "salon2.jpeg"
+
+                        ];
+
+                        let indicePlantel = 0;
+                        setInterval(() => {
+                            indicePlantel++;
+                            if(indicePlantel >= fotosPlantel.length){
+
+                                indicePlantel = 0;
+
+                            }
+
+                            document.getElementById("plantel").src = fotosPlantel[indicePlantel];
+
+                        }, 3000);
+
+
+                        const fotosActividades = [
+                            "navidad.jpeg",
+                            "muertos1.jpeg",
+                            "dragonred.jpeg",
+                            "museo1.jpeg",
+                            "museo2.jpeg",
+                            "museo3.jpeg",
+                            "museo4.jpeg",
+                            "platicamilitar.jpeg",
+                            "platicaredvid1.jpeg"
+
+                    ];
+
+                    let indiceActividades = 0;
+                    setInterval(() => {
+                        indiceActividades++;
+                        if(indiceActividades >= fotosActividades.length){
+                            indiceActividades = 0;
+                        }
+
+                        document.getElementById("actividades").src = fotosActividades[indiceActividades];
+                        fotosActividades[indiceActividades];
+                    }, 3000);
+                }
+                        </script>
+              
+
+                        <section class="container">
+
+                            <h2>Mision</h2>
+
+                            <p>Formar estudiantes responsables y preparados académicamente.</p>
+
+                            <h2>Vision</h2>
+
+                            <p>Ser uns institucion reconocida por su excelencia educativa.</p>
+
+                        </section>
+
+                        <audio autoplay loop hidden>
+                            <source src="scoo.mpeg" type="audio/mp3">
+
+                        </audio>
+
+                              </body>
+
+                            <section id="Contacto" class="container">
+                                <h2>Contacto</h2>
+
+                                <form onsubmit="enviarformulario(event)">
+                                    <input type="text" placeholder="Nombre"required><br><br>
+                                    <input type="email" placeholder="Correo" required><br><br>
+                                    <textarea placeholder="Mensaje" required></textarea><br><br>
+                                    <button type="submit">Enviar</button>
+                                    </form>
+
+                                    <p id="mensaje"></p>
+                                    </section>
+
+                                    <Section id="ubicacion"class="container">
+
+                                        <h2>Ubicacion</h2>
+
+                                        <iframe src="https://www.google.com/maps?q=Escuela+Secundaria+Diurna+227+Soumaya+Domit+Gemayel&output=embed" width="100%"height="300"style="border:0;"allowfullscreen=""loading="lazy"></iframe>
+
+                                    </Section>
+
+                                    <section class="container">
+
+                                        <h2>Noticias</h2>
+
+                                        <div class="card">
+                                            <h3>Concurso de ciencias</h3>
+                                            <h4>Los alumnos participaran en la feria de ciencias 2026</h4>
+                                        </div>
+                                    </section>
+
+                                    <section class="container">
+
+                                        <h2>Proximos eventos</h2>
+
+                                        <ul>
+                                            <li>15 Mayo - Dia del maestro</li>
+                                            <li>20 de Mayo - Examenes</li>
+                                            <li>10 Junio - Clausura</li>
+                                        </ul>
+                                    </section>
+
+                                    <section class="container">
+
+                                        <h2>Reglamento</h2>
+
+                                        <ul>
+
+                                            <li>Respetar a compañeros y maestros.</li>
+                                            <li>Usar uniforme completo.</li>
+                                            <li>Llegar puntualmente.</li>
+                                        </ul>
+                                         
+                                    </section>
+
+                                    <section class="container">
+
+                                        <h2>Portal Escolar</h2>
+                                        <input type="text" placeholder="Usuario">
+
+                                        <input type="password"placeholder="Contraseña">
+
+                                        <button>Inciar sesion</button>
+                                    </section>
+
+                                    <head>
+                                        <style>
+                                            body{
+                                                background:-o-linear-gradient(to right, #74ebd5, #ABC6E5);
+                                            }
+                                            .container:hover {
+                                                transform: scale(1.01);
+                                                transition: 0.3s;
+                                            }
+                                        </style>
+
+                                        <div class="card">
+                                            <p>Correo:vsecundaria77@gmail.com</p>
+                                            <p>Telefono:55 5319 5928</p>
+                                        </div>
+                                        <footer>
+                                            <p>&copy; 2026 Soumaya Domit Gemayel Vespertino 227</p>
+                                        </footer>
+
+                                        </body>
+                                        </html>
